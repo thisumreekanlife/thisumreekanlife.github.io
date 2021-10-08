@@ -28,7 +28,7 @@ twitter_username: thisumreekanlife
 github_username:  thisumreekanlife
 
 # Build settings
-theme: jekyll-athena
+theme: minima
 plugins:
   - jekyll-feed
 
