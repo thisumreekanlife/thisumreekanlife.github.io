@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<div class="home">
+    <div class="page-heading">
+        {{ page.title }}
+    </div>
+    <div class="podbox float-left">
+        <div class="podbox-logo">
+            <a href="/"><img src="/assets/images/logo.png" class=logo></a>
+        </div>
+        <div class="podname podbox-podname">
+            {{ site.podname }}
+        </div>
+        {{ content }}
+
+        {%- for badge in site.badges -%}
+        <div>
+            <a href="{{badge.link}}" class=badgelink>
+                <img src="/assets/images/{{badge.image}}" class=badgeimage>
+            </a>
+        </div>
+        {%- endfor -%}
+    </div>
+
+    <di class=float-right>
+        {%- if site.posts.size > 0 -%}
+        <h2 class="post-list-heading">{{ page.list_title | default: "Episode Notes" }}</h2>
+        <ul class="post-list">
+            {%- for post in site.posts -%}
+            <li>
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                <span class="post-meta">{{ post.date | date: date_format }}</span>
+                <h3>
+                    <a class="post-link" href="{{ post.url | relative_url }}">
+                        {{ post.title | escape }}
+                    </a>
+                </h3>
+                {%- if site.show_excerpts -%}
+                {{ post.excerpt }}
+                {%- endif -%}
+            </li>
+            {%- endfor -%}
+        </ul>
+
+        {%- endif -%}
+</div>
+
+</div>

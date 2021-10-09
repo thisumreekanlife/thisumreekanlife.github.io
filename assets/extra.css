@@ -1,0 +1,63 @@
+.row {
+    width: 100%;
+}
+
+.column {
+    float: left;
+    width: 40%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+}
+
+.circular {
+    border-radius: 10%;
+    width: 70%;
+} */
+
+.badgelink {
+    display: inline-block;
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 150px;
+    height: 50px;
+}
+
+.badgeimage {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 150px;
+    height: 50px;
+}
+
+.copyright{
+    float: right;
+    font-size: smaller;
+    color: gray;
+}
+.logo{
+    width: 8em;
+    float: left;
+}
+.podname{
+    align-items: bottom;
+    color: gray;
+}
+.float-left{
+    float:left;
+}
+.float-right{
+    float:right;
+}

@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Me"
+date:   2021-03-30 17:00:00 -0500
+categories: podcast episode
+---
+Growing up in India I had some ideas of what America was. After moving here for grad school, I found out what was really true. This short intro episode will kick off our first season of This Umreekan Life.

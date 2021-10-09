@@ -18,19 +18,33 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: This Umreekan Life Blog
+title: This Umreekan Life Podcast
+podname: This Umreekan Life
 email: thisumreekanlife@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This Umreekan Life is a podcast where we have discussion on various aspects of the desi immigrant life.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://thisumreekanlife.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: thisumreekanlife
 instagram_username:  thisumreekanlife
+entities:
+  - image: "image1.png"
+    name: "Swarup Sahoo"
+    title: "Creator/Host"
+    description: "Data Scientist with a lot of freetime"
+    flag: 🇮🇳
+  - image: "image2.png"
+    name: "Alejandra Muñiz"
+    title: "Producer"
+    description: "Communications Specialist wannabe"
+    flag: 🇺🇸
+badges:
+  - link: "https://podcasts.apple.com/us/podcast/this-umreekan-life/id1560782457?itsct=podcast_box_badge&amp;itscg=30200&amp;ls=1"
+    image: "US_UK_Apple_Podcasts_Listen_Badge_RGB.svg"
+  - link: "https://open.spotify.com/show/5LBX6ngLNN56apBtwoyavr?si=42f209105e084ae2"
+    image: "spotify-podcast-badge-blk-grn-660x160.svg"
 
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+# theme: minima
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -1,0 +1,13 @@
+---
+layout: page
+---
+{%- for entity in site.entities -%}
+<div class="row" style="font-family: 'Yaldevi', sans-serif;">
+    <div class="column">
+        <img class=circular src="/assets/images/{{entity.image}}">
+        <h4><b>{{entity.name}}</b></h4>
+        <b>{{entity.title}} {{entity.flag}}</b>
+        <p>{{entity.description}}</p>
+    </div>
+</div>
+{%- endfor -%}
